@@ -1,0 +1,18 @@
+# Cloudflare Pages custom headers
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# Long-cache static media (hash-fingerprinted assets + images)
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+/videos/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Keep the app shell fresh
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
