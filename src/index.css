@@ -235,3 +235,16 @@ html.dark body {
     animation: none !important;
   }
 }
+
+/* RTL support for Persian */
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+/* LTR override for technical elements */
+.ltr-tech {
+  direction: ltr;
+  text-align: left;
+  unicode-bidi: embed;
+}
