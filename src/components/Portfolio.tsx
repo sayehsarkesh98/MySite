@@ -274,6 +274,72 @@ export function ProjectModal({
             {project.description}
           </p>
 
+          {/* Technical Approach / Behind the Scenes */}
+          <div className="mt-10 border-t border-bone-100/10 pt-8">
+            <h4 className="mb-6 flex items-center gap-3 font-mono text-[11px] uppercase tracking-[0.35em] text-tungsten-400">
+              <span className="inline-block h-px w-8 bg-tungsten-400" />
+              Technical Approach
+            </h4>
+            
+            {/* Before & After Color Grading Comparison */}
+            <div className="mb-8">
+              <p className="mb-4 font-mono text-[10px] uppercase tracking-[0.25em] text-bone-500">
+                Color Grade — DaVinci Resolve Workflow
+              </p>
+              <div className="grid grid-cols-2 gap-2 overflow-hidden rounded-sm border border-bone-100/10">
+                <div className="relative aspect-video bg-coal-950">
+                  <img
+                    src={project.thumb}
+                    alt="Before color grade - flat log profile"
+                    loading="lazy"
+                    decoding="async"
+                    className="h-full w-full object-cover opacity-60 grayscale-[30%]"
+                  />
+                  <span className="absolute bottom-2 left-2 font-mono text-[9px] uppercase tracking-[0.2em] text-bone-400">
+                    Before
+                  </span>
+                </div>
+                <div className="relative aspect-video bg-coal-950">
+                  <img
+                    src={project.thumb}
+                    alt="After color grade - final look"
+                    loading="lazy"
+                    decoding="async"
+                    className="h-full w-full object-cover"
+                  />
+                  <span className="absolute bottom-2 left-2 font-mono text-[9px] uppercase tracking-[0.2em] text-tungsten-400">
+                    After
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Lighting & Camera Notes */}
+            <div className="grid gap-6 sm:grid-cols-2">
+              <div>
+                <p className="mb-2 font-mono text-[9px] uppercase tracking-[0.25em] text-bone-600">
+                  Lighting Setup
+                </p>
+                <p className="text-sm leading-relaxed text-bone-300">
+                  Placeholder: Describe key light position, fill ratio, practicals used, 
+                  and any special lighting techniques. Example: "Single source 4K HMI 
+                  through 12x12 diffusion frame at 45°, supplemented by tungsten practicals 
+                  dimmed to 30%."
+                </p>
+              </div>
+              <div>
+                <p className="mb-2 font-mono text-[9px] uppercase tracking-[0.25em] text-bone-600">
+                  Camera & Movement
+                </p>
+                <p className="text-sm leading-relaxed text-bone-300">
+                  Placeholder: Detail camera support, lens choices, and movement. 
+                  Example: "Handheld for intimate moments, locked-off on dolly for 
+                  wide establishing shots. Primary lens: 35mm anamorphic at T2.8."
+                </p>
+              </div>
+            </div>
+          </div>
+
           <div className="mt-8 grid gap-x-10 sm:grid-cols-2">
             {project.credits.map((c) => (
               <div
