@@ -114,37 +114,26 @@ export default function About() {
             >
               Capabilities
             </p>
-            <div className="mt-4">
+            <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
               {skills.map((s, i) => {
                 const Icon = iconMap[s.icon];
                 return (
                   <div
                     key={s.name}
-                    className="group grid grid-cols-[auto_1fr] items-center gap-x-5 border-b border-bone-100/10 py-5"
+                    className="group flex items-start gap-4 border-l border-bone-100/10 pl-5 py-2"
                     data-reveal
                     style={{ "--rd": `${i * 90}ms` } as CSSProperties}
                   >
-                    <span className="grid h-12 w-12 place-items-center border border-bone-100/15 text-tungsten-400 transition-colors duration-300 group-hover:border-tungsten-400 group-hover:bg-tungsten-400 group-hover:text-coal-950">
-                      <Icon className="h-6 w-6 transition-transform duration-500 group-hover:rotate-6" />
+                    <span className="grid h-10 w-10 shrink-0 place-items-center border border-bone-100/15 text-tungsten-400 transition-all duration-300 group-hover:border-tungsten-400 group-hover:bg-tungsten-400/10">
+                      <Icon className="h-5 w-5 transition-transform duration-500 group-hover:scale-110" />
                     </span>
                     <div>
-                      <div className="flex items-baseline justify-between gap-4">
-                        <h3 className="font-display text-2xl leading-none text-bone-100 md:text-3xl">
-                          {s.name}
-                        </h3>
-                        <span className="font-mono text-xs tabular-nums text-bone-500">
-                          {s.level}%
-                        </span>
-                      </div>
-                      <p className="mt-1.5 font-mono text-[10px] uppercase tracking-[0.25em] text-bone-600">
+                      <h3 className="font-display text-xl leading-none text-bone-100 md:text-2xl">
+                        {s.name}
+                      </h3>
+                      <p className="mt-2 font-mono text-[10px] leading-relaxed uppercase tracking-[0.2em] text-bone-500">
                         {s.note}
                       </p>
-                      <div className="mt-3 h-[3px] w-full bg-coal-700">
-                        <div
-                          className="bar-fill h-full bg-gradient-to-r from-tungsten-600 to-tungsten-300"
-                          style={{ "--w": `${s.level}%` } as CSSProperties}
-                        />
-                      </div>
                     </div>
                   </div>
                 );
