@@ -14,22 +14,22 @@ export interface Social {
 
 export const site = {
   /* ————— who you are (placeholders — replace) ————— */
-  name: "Adrian Voss",
-  firstName: "ADRIAN",
-  lastName: "VOSS",
+  name: "آدریان ووس",
+  firstName: "آدریان",
+  lastName: "ووس",
   monogram: "AV",
-  title: "Cinematographer & Director",
+  title: "مدیر فیلم‌برداری و کارگردان",
   intro: [
-    "I shape light, movement and silence into",
-    "frames that carry a story. Eight years behind",
-    "the lens — commercials, films and everything",
-    "that lives between them.",
+    "من نور، حرکت و سکوت را به قاب‌هایی تبدیل می‌کنم",
+    "که حامل داستان هستند. هشت سال پشت لنز —",
+    "تبلیغات، فیلم‌ها و همه چیزهایی که",
+    "بین آن‌ها زندگی می‌کند.",
   ],
 
   /* ————— contact placeholders ————— */
   email: "hello@adrianvoss.film",
-  location: "Los Angeles — available worldwide",
-  availability: "Booking Q3 2026",
+  location: "لس آنجلس — در دسترس جهانی",
+  availability: "رزرو سه‌ماهه سوم ۲۰۲۶",
   coordinates: "34.0522° N — 118.2437° W",
 
   /* ————— hero background video (placeholder mp4).
@@ -41,10 +41,10 @@ export const site = {
     "https://image.qwenlm.ai/generated-images/4d430ef6-c985-4c00-b69e-a659f666041a/_result.png",
 
   stats: [
-    { value: "08", suffix: "+", label: "Years behind the lens" },
-    { value: "120", suffix: "+", label: "Projects delivered" },
-    { value: "14", suffix: "", label: "Festival selections" },
-    { value: "06", suffix: "", label: "Countries shot in" },
+    { value: "۰۸", suffix: "+", label: "سال تجربه پشت لنز" },
+    { value: "۱۲۰", suffix: "+", label: "پروژه تحویل داده شده" },
+    { value: "۱۴", suffix: "", label: "انتخاب جشنواره‌ای" },
+    { value: "۰۶", suffix: "", label: "کشورهای فیلم‌برداری شده" },
   ],
 
   socials: [
@@ -56,13 +56,13 @@ export const site = {
 };
 
 export const bio = [
-  "I started as a runner on night shoots, holding flags in the rain and stealing glances at the monitor. That first look at an image being made — light hitting a face exactly right — never wore off. Since then I've shot across commercials, music videos and documentary work, chasing the same thing: a frame that feels inevitable.",
-  "My work lives where preparation meets instinct. I storyboard, light tests and rig rehearsals obsessively — then I throw the plan away the moment something true happens in front of the lens. The best frames are rarely the ones you storyboarded. They're the ones you were awake enough to catch.",
+  "من به عنوان دونده در شب‌های فیلم‌برداری شروع کردم، پرچم‌ها را زیر باران نگه می‌داشتم و نگاهی دزدانه به مانیتور می‌انداختم. آن اولین نگاه به ساخت تصویر — وقتی نور دقیقاً درست به چهره‌ای می‌تابد — هرگز محو نشد. از آن زمان، من در تبلیغات، موزیک ویدیوها و مستند کار کرده‌ام و به دنبال یک چیز هستم: قابی که اجتناب‌ناپذیر به نظر برسد.",
+  "کار من جایی است که آمادگی با غریزه ملاقات می‌کند. من استوری‌بورد، تست نور و تمرینات ریگ را وسواسانه انجام می‌دهم — سپس نقشه را دور می‌اندازم به محض اینکه چیزی واقعی جلوی لنز اتفاق بیفتد. بهترین قاب‌ها به ندرت همان‌هایی هستند که استوری‌بورد کرده‌اید. آن‌ها قاب‌هایی هستند که به اندازه کافی بیدار بودید تا بگیریدشان.",
 ];
 
 export const philosophy = {
-  pull: "Light is a language. Most films speak it politely — I want mine to whisper, shout and hold your gaze.",
-  body: "Every project gets one question before any camera is chosen: what should this feel like at 2 a.m. when someone watches it alone? Everything else — lens, grade, rhythm — is just the answer.",
+  pull: "نور یک زبان است. بیشتر فیلم‌ها آن را مؤدبانه صحبت می‌کنند — من می‌خواهم فیلم‌هایم زمزمه کنند، فریاد بزنند و نگاه شما را نگه دارند.",
+  body: "هر پروژه قبل از انتخاب هر دوربینی یک سوال می‌گیرد: این باید ساعت ۲ صبح وقتی کسی تنها تماشا می‌کند چه حسی داشته باشد؟ بقیه چیزها — لنز، گرید، ریتم — فقط پاسخ هستند.",
 };
 
 export interface Skill {
