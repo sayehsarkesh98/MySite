@@ -14,11 +14,11 @@ export interface Social {
 
 export const site = {
   /* ————— who you are (placeholders — replace) ————— */
-  name: "آدریان ووس",
-  firstName: "آدریان",
-  lastName: "ووس",
-  monogram: "AV",
-  title: "مدیر فیلم‌برداری و کارگردان",
+  name: "فرید صحرایی",
+  firstName: "فرید",
+  lastName: "صحرایی",
+  monogram: "فص",
+  title: "سینماتوگرافر و کارگردان",
   intro: [
     "من نور، حرکت و سکوت را به قاب‌هایی تبدیل می‌کنم",
     "که حامل داستان هستند. هشت سال پشت لنز —",
@@ -27,10 +27,10 @@ export const site = {
   ],
 
   /* ————— contact placeholders ————— */
-  email: "hello@adrianvoss.film",
-  location: "لس آنجلس — در دسترس جهانی",
-  availability: "رزرو سه‌ماهه سوم ۲۰۲۶",
-  coordinates: "34.0522° N — 118.2437° W",
+  email: "farid@sahraei.film",
+  location: "تهران — در دسترس جهانی",
+  availability: "رزرو سه‌ماهه سوم ۱۴۰۵",
+  coordinates: "35.6892° N — 51.3890° E",
 
   /* ————— hero background video (placeholder mp4).
          Drop your showreel into /public and point this at it,
@@ -48,10 +48,10 @@ export const site = {
   ],
 
   socials: [
-    { id: "vimeo", label: "Vimeo", handle: "vimeo.com/adrianvoss", url: "https://vimeo.com" },
-    { id: "youtube", label: "YouTube", handle: "@adrianvoss.film", url: "https://youtube.com" },
-    { id: "instagram", label: "Instagram", handle: "@adrianvoss.dp", url: "https://instagram.com" },
-    { id: "x", label: "X / Twitter", handle: "@adrianvoss_dp", url: "https://x.com" },
+    { id: "vimeo", label: "Vimeo", handle: "vimeo.com/faridsahraei", url: "https://vimeo.com" },
+    { id: "youtube", label: "YouTube", handle: "@faridsahraei.film", url: "https://youtube.com" },
+    { id: "instagram", label: "Instagram", handle: "@faridsahraei.dp", url: "https://instagram.com" },
+    { id: "x", label: "X / Twitter", handle: "@faridsahraei_dp", url: "https://x.com" },
   ] as Social[],
 };
 
@@ -73,9 +73,9 @@ export interface Skill {
 }
 
 export const skills: Skill[] = [
-  { name: "Cinematography", note: "ARRI · RED · Sony Venice", level: 95, icon: "aperture" },
-  { name: "Video Editing", note: "Premiere · DaV Resolve", level: 88, icon: "edit" },
-  { name: "Directing", note: "Narrative & commercial", level: 85, icon: "megaphone" },
-  { name: "AI Tools", note: "Generative & assisted workflows", level: 80, icon: "neural" },
-  { name: "Visual Storytelling", note: "Script to final grade", level: 92, icon: "eye" },
+  { name: "فیلم‌برداری", note: "ARRI · RED · Sony Venice", level: 95, icon: "aperture" },
+  { name: "تدوین ویدیو", note: "Premiere · DaV Resolve", level: 88, icon: "edit" },
+  { name: "کارگردانی", note: "Narrative & commercial", level: 85, icon: "megaphone" },
+  { name: "ابزارهای هوش مصنوعی", note: "Generative & assisted workflows", level: 80, icon: "neural" },
+  { name: "روایت بصری", note: "Script to final grade", level: 92, icon: "eye" },
 ];
