@@ -4,9 +4,9 @@ import { useScrollProgress, useTimecode } from "../hooks";
 import { IconClose } from "./icons";
 
 const links = [
-  { href: "#work", label: "Work" },
-  { href: "#about", label: "About" },
-  { href: "#contact", label: "Contact" },
+  { href: "#work", label: "آثار منتخب" },
+  { href: "#about", label: "درباره من" },
+  { href: "#contact", label: "تماس" },
 ];
 
 export default function Nav() {
@@ -46,7 +46,7 @@ export default function Nav() {
             : "bg-transparent"
         }`}
       >
-        <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8">
+        <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8 nav-rtl">
           <a href="#home" className="group flex items-center gap-3">
             <span className="grid h-9 w-9 place-items-center border border-tungsten-400/60 font-display text-lg leading-none text-tungsten-400 transition-colors duration-300 group-hover:bg-tungsten-400 group-hover:text-coal-950">
               {site.monogram}
@@ -56,23 +56,23 @@ export default function Nav() {
             </span>
           </a>
 
-          <ul className="hidden items-center gap-10 md:flex">
+          <ul className="hidden items-center gap-10 md:flex nav-rtl">
             {links.map((l, i) => (
               <li key={l.href}>
                 <a
                   href={l.href}
                   className="group relative font-mono text-[11px] uppercase tracking-[0.3em] text-bone-300 transition-colors hover:text-bone-100"
                 >
-                  <span className="mr-2 text-tungsten-500">0{i + 1}</span>
+                  <span className="ml-2 ltr-tech text-tungsten-500">0{i + 1}</span>
                   {l.label}
-                  <span className="absolute -bottom-1.5 left-0 h-px w-0 bg-tungsten-400 transition-all duration-300 group-hover:w-full" />
+                  <span className="absolute -bottom-1.5 right-0 h-px w-0 bg-tungsten-400 transition-all duration-300 group-hover:w-full" />
                 </a>
               </li>
             ))}
           </ul>
 
           <div className="flex items-center gap-5">
-            <div className="hidden items-center gap-2 font-mono text-[11px] tracking-widest text-bone-500 sm:flex">
+            <div className="hidden items-center gap-2 font-mono text-[11px] tracking-widest text-bone-500 sm:flex ltr-tech">
               <span className="rec-dot h-2 w-2 rounded-full bg-[#e0563f]" />
               REC
               <span className="tabular-nums text-bone-300">{tc}</span>
@@ -91,9 +91,9 @@ export default function Nav() {
 
       {/* mobile menu — full-frame slate */}
       {open && (
-        <div className="fade-in fixed inset-0 z-[70] flex flex-col bg-coal-950/[0.98] md:hidden">
+        <div className="fade-in fixed inset-0 z-[70] flex flex-col bg-coal-950/[0.98] md:hidden" dir="rtl">
           <div className="flex items-center justify-between px-5 py-4">
-            <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-bone-500">
+            <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-bone-500 ltr-tech">
               Menu — AV/26
             </span>
             <button
@@ -112,14 +112,14 @@ export default function Nav() {
                 onClick={() => setOpen(false)}
                 className="group flex items-baseline gap-4 border-b border-bone-100/10 py-4"
               >
-                <span className="font-mono text-xs text-tungsten-500">0{i + 1}</span>
+                <span className="font-mono text-xs text-tungsten-500 ltr-tech">0{i + 1}</span>
                 <span className="font-display text-6xl leading-none text-bone-100 transition-colors group-hover:text-tungsten-400">
                   {l.label}
                 </span>
               </a>
             ))}
           </nav>
-          <div className="px-8 pb-10 font-mono text-[11px] tracking-widest text-bone-600">
+          <div className="px-8 pb-10 font-mono text-[11px] tracking-widest text-bone-600 ltr-tech">
             {site.email}
           </div>
         </div>
