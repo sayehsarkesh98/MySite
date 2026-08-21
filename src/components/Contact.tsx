@@ -4,6 +4,7 @@ import {
   IconArrowUpRight,
   IconCheck,
   IconCopy,
+  IconDownload,
   IconMail,
   SocialIcon,
 } from "./icons";
@@ -85,6 +86,24 @@ export default function Contact() {
               {copied ? <IconCheck className="h-4 w-4" /> : <IconCopy className="h-4 w-4" />}
               {copied ? "Copied" : "Copy"}
             </button>
+          </div>
+
+          {/* Download CV button */}
+          <div
+            className="mt-8"
+            data-reveal
+            style={{ "--rd": "320ms" } as CSSProperties}
+          >
+            <a
+              href="/cv.pdf"
+              download
+              className="group inline-flex items-center gap-3 border border-tungsten-400/30 bg-tungsten-400/5 px-6 py-4 transition-all duration-500 hover:border-tungsten-400 hover:bg-tungsten-400 hover:shadow-[0_0_30px_rgba(232,184,88,0.15)]"
+            >
+              <IconDownload className="h-5 w-5 text-tungsten-400 transition-transform duration-500 group-hover:-translate-y-0.5 group-hover:scale-110" />
+              <span className="font-mono text-[11px] uppercase tracking-[0.25em] text-tungsten-400 transition-colors duration-300 group-hover:text-coal-950">
+                Download CV
+              </span>
+            </a>
           </div>
 
           {/* availability */}
