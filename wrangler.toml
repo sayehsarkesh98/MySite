@@ -3,12 +3,3 @@
 
 name = "cinema-portfolio"
 compatibility_date = "2026-02-01"
-
-# Vite outputs the built site here
-pages_build_output_dir = "dist"
-
-# Your Cloudflare account
-account_id = "894734c20b93f91f0f60b4b3a5d77009"
-
-# Branch that maps to the production *.pages.dev URL
-production_branch = "main"
