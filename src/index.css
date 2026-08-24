@@ -24,9 +24,9 @@
   --color-tealgrade-500: #5c8a82;
   --color-tealgrade-700: #38564f;
 
-  --font-display: "Bebas Neue", "Arial Narrow", sans-serif;
-  --font-body: "Archivo", "Helvetica Neue", Helvetica, sans-serif;
-  --font-mono: "Space Mono", "Courier New", monospace;
+  --font-display: "B Titr", "Bebas Neue", "Arial Narrow", sans-serif;
+  --font-body: "Vazirmatn", "Archivo", "Helvetica Neue", Helvetica, sans-serif;
+  --font-mono: "JetBrains Mono", "Space Mono", "Courier New", monospace;
 }
 
 html {
@@ -250,40 +250,16 @@ html.dark body {
   display: inline-block;
 }
 
-/* Fix flexbox/grid alignment in RTL */
-[dir="rtl"] .flex-row {
-  flex-direction: row-reverse;
-}
-
-[dir="rtl"] .justify-start {
-  justify-content: flex-end;
-}
-
-[dir="rtl"] .justify-end {
-  justify-content: flex-start;
-}
-
-/* Stats grid fix for RTL */
-.stats-grid-rtl {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 2rem;
-  direction: rtl;
-}
-
-.stat-item-rtl {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-/* Header navigation RTL fix */
+/* Header navigation RTL fix - use flex-direction row-reverse on desktop */
 .nav-rtl {
   display: flex;
   gap: 1.5rem;
-  flex-direction: row-reverse;
+}
+
+@media (min-width: 768px) {
+  .nav-rtl {
+    flex-direction: row-reverse;
+  }
 }
 
 /* Hero section RTL adjustments */
@@ -294,4 +270,62 @@ html.dark body {
 
 .hero-rtl .mask-line {
   direction: rtl;
+}
+
+/* Stats grid fix for RTL - proper alignment with logical properties */
+.stats-grid-rtl {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  direction: rtl;
+}
+
+.stat-item-rtl {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .stat-item-rtl {
+    padding: 1.5rem;
+  }
+}
+
+/* Mobile menu RTL */
+.mobile-menu-rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Portfolio grid RTL */
+.portfolio-grid-rtl {
+  direction: rtl;
+}
+
+/* Contact section RTL */
+.contact-rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+/* About section RTL */
+.about-rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Responsive typography for mobile */
+@media (max-width: 768px) {
+  .hero-rtl h1 {
+    font-size: clamp(3rem, 12vw, 8rem);
+  }
+  
+  .stat-item-rtl p:first-child {
+    font-size: 3rem;
+  }
 }
