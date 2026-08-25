@@ -64,7 +64,7 @@ export default function Portfolio({ onOpen }: { onOpen: (p: Project) => void }) 
                     : "border-bone-100/15 text-bone-300 hover:border-tungsten-400 hover:text-tungsten-400"
                 }`}
               >
-                {c} <span className={active ? "opacity-60" : "text-bone-600"}>({count})</span>
+                {c === "All" ? "همه" : c}{" "} <span className={active ? "opacity-60" : "text-bone-600"}>({count})</span>
               </button>
             );
           })}

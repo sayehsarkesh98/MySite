@@ -172,7 +172,7 @@ export const portrait =
   "https://image.qwenlm.ai/generated-images/e0464990-2d56-47fa-a3b1-3827416873ed/_result.png";
 
 export const categories: ("All" | Category)[] = [
-  "همه",
+  "All",
   "Commercial",
   "Music Video",
   "Documentary",
