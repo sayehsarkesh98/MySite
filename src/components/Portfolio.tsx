@@ -1,11 +1,12 @@
 import { useEffect, useState, type CSSProperties } from "react";
 import {
   categories,
-  isEmbedUrl,
+  projectVideoSource,
   projects,
   type Category,
   type Project,
 } from "../data/projects";
+import StreamPlayer from "./StreamPlayer";
 import { IconArrowUpRight, IconClose, IconPlay } from "./icons";
 
 const spans = [
@@ -226,26 +227,16 @@ export function ProjectModal({
           </button>
         </div>
 
-        {/* player */}
+        {/* player — StreamPlayer handles Stream UID / mp4 / YT / Vimeo */}
         <div className="relative aspect-video bg-coal-950">
-          {isEmbedUrl(project.video) ? (
-            <iframe
-              src={project.video}
-              title={project.title}
-              className="absolute inset-0 h-full w-full"
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowFullScreen
-            />
-          ) : (
-            <video
-              src={project.video}
-              poster={project.thumb}
-              controls
-              autoPlay
-              playsInline
-              className="h-full w-full object-contain"
-            />
-          )}
+          <StreamPlayer
+            src={projectVideoSource(project)}
+            poster={project.thumb}
+            title={project.title}
+            autoPlay
+            lazy={false}
+            className="absolute inset-0 h-full w-full"
+          />
         </div>
 
         {/* details */}

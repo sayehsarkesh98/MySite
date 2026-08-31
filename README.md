@@ -23,6 +23,85 @@ npm run dev        # → http://localhost:5173
 npm run build      # production build → dist/
 ```
 
+## ✏️ Editing texts (غیرفنی — بدون برنامه‌نویسی)
+
+همه متن‌های سایت در **یک فایل** هستند: `src/content.json`
+(اسم، معرفی، بیو، فلسفه، مهارت‌ها، آمار، شبکه‌های اجتماعی و همه پروژه‌ها)
+
+### ساده‌ترین روش: ویرایش در خود گیت‌هاب
+
+1. برو به مخزن پروژه در GitHub (github.com/sayehsarkesh98/MySite)
+2. وارد پوشه `src` شو و روی فایل **`content.json`** کلیک کن
+3. روی آیکون **مداد ✏️ (Edit this file)** کلیک کن
+4. فقط **متن‌های بین گیومه** را عوض کن — ساختار فایل (آکولاد و ویرگول‌ها) را دست نزن
+5. پایین صفحه روی **Commit changes** کلیک کن
+
+همین! هر Commit به شاخه `main` = سایت روی Cloudflare Pages **خودکار بازسازی می‌شود**
+(معمولاً زیر ۲ دقیقه آماده می‌شود).
+
+### راهنمای سریع فیلدهای مهم
+
+| می‌خواهی عوض کنی | کجا در content.json |
+|---|---|
+| اسم و عنوان | `site.name`, `site.firstName`, `site.lastName`, `site.title` |
+| متن معرفی صفحه اول | `site.intro` (هر خط یک رشته) |
+| ایمیل و موقعیت | `site.email`, `site.location`, `site.availability` |
+| ویدیوی پس‌زمینه هیرو | `site.heroVideo` (mp4 یا UID کلادفلر استریم) |
+| عکس پوستر هیرو | `site.heroPoster` |
+| آمار (سال تجربه و…) | `site.stats` |
+| شبکه‌های اجتماعی | `site.socials` |
+| بیوی «درباره من» | `bio.پاراگراف_۱` و `bio.پاراگراف_۲` |
+| فلسفه | `philosophy.pull` و `philosophy.body` |
+| مهارت‌ها | `skills.list` (عدد level از ۰ تا ۱۰۰) |
+| فیلم‌ها | `projects.list` (برای افزودن فیلم، یک بلوک `{ … }` را کپی کن) |
+
+> داخل خود فایل هم بالای هر بخش یک فیلد `_توضیح` یا `_راهنما` هست که فارسی
+> توضیح می‌دهد آن بخش چیست. این فیلدها فقط راهنما هستند و در سایت نمایش داده نمی‌شوند.
+
+### تصاویر پروژه‌ها
+
+عکس‌ها را در پوشه `public/images` آپلود کن (در GitHub: *Add file → Upload files*)
+و در `thumb` هر پروژه مسیر `/images/نام‌عکس.jpg` را بنویس.
+
+## 🎬 Adding a new video (Cloudflare Stream)
+
+The site plays videos from **Cloudflare Stream** with zero configuration —
+you only paste a **UID**.
+
+### Steps
+
+1. **Upload** — go to [dash.cloudflare.com](https://dash.cloudflare.com) → **Stream** → *Upload video*.
+2. **Allow embedding** — after upload, open the video → *Embed* → make sure
+   **Unsigned embeds** are enabled (Stream → Settings → "Allow unsigned embeds").
+3. **Copy the UID** — it's the 32-character hex string in the video page URL or embed code,
+   e.g. `b6f21a9c8d3e4f5a6b7c8d9e0f1a2b3c`.
+4. **Paste it** into `src/data/projects.ts` in the `video` field of your project:
+
+```ts
+{
+  id: "my-new-film",
+  title: "فیلم جدید من",
+  // …
+  thumb: "/images/my-new-fillm.jpg",   // poster in /public/images
+  video: "b6f21a9c8d3e4f5a6b7c8d9e0f1a2b3c",   // ← just the Stream UID
+}
+```
+
+### What `video` accepts (all auto-detected)
+
+| Input | Example |
+|---|---|
+| Stream UID | `b6f21a9c8d3e4f5a6b7c8d9e0f1a2b3c` |
+| Stream manifest URL | `https://customer-<code>.cloudflarestream.com/<UID>/manifest/video.m3u8` |
+| YouTube embed | `https://www.youtube.com/embed/VIDEO_ID` |
+| Vimeo embed | `https://player.vimeo.com/video/VIDEO_ID` |
+| Direct file | `https://…/film.mp4` or `/videos/film.mp4` |
+
+> **No tokens or secrets** are needed in the code — Stream embeds are public
+> (unsigned). If you ever need the Stream API (upload from the site, etc.),
+> put the token only in `wrangler.toml` vars or Cloudflare Pages
+> environment variables — never in git-tracked source.
+
 ## ☁️ Deploy to Cloudflare Pages
 
 Everything is preconfigured in `wrangler.toml` (project name, account ID, `dist` output).

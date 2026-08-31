@@ -1,0 +1,302 @@
+{
+  "_راهنما": "👋 برای ویرایش متن‌های سایت، همین فایل را ویرایش کنید. متن جلوی هر فیلد را عوض کنید و بعد فایل را Commit (ذخیره) کنید. سایت خودکار به‌روز می‌شود. لطفاً ساختار (آکولادها، براکت‌ها و ویرگول‌ها) را تغییر ندهید — فقط متن‌های بین گیومه «».",
+  "_راهنمای_تغییر_اسم": "اسم شما: فقط متن جلوی name و firstName و lastName و monogram را عوض کنید. monogram = حروف اول اسم برای لوگو.",
+  "_راهنمای_ویدیو": "ویدیوها: کافیست UID ویدیوی Cloudflare Stream (رشته ۳۲ حرفی) را در فیلد video هر پروژه بگذارید. یا لینک کامل YouTube/Vimeo/mp4. تصویر شاخص (thumb) می‌تواند هر URL عکسی باشد یا مسیر /images/x.jpg",
+  "site": {
+    "_توضیح": "اطلاعات اصلی صفحه اصلی و بخش‌های بالای سایت",
+    "name": "فرید صحرایی",
+    "firstName": "فرید",
+    "lastName": "صحرایی",
+    "monogram": "فص",
+    "title": "سینماتوگرافر و کارگردان",
+    "intro": [
+      "من نور، حرکت و سکوت را به قاب‌هایی تبدیل می‌کنم",
+      "که حامل داستان هستند. هشت سال پشت لنز —",
+      "تبلیغات، فیلم‌ها و همه چیزهایی که",
+      "بین آن‌ها زندگی می‌کند."
+    ],
+    "email": "farid@sahraei.film",
+    "location": "تهران — در دسترس جهانی",
+    "availability": "رزرو سه‌ماهه سوم ۱۴۰۵",
+    "coordinates": "35.6892° N — 51.3890° E",
+    "heroVideo": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+    "heroPoster": "https://image.qwenlm.ai/generated-images/4d430ef6-c985-4c00-b69e-a659f666041a/_result.png",
+    "stats": [
+      {
+        "value": "۰۸",
+        "suffix": "+",
+        "label": "سال تجربه پشت لنز"
+      },
+      {
+        "value": "۱۲۰",
+        "suffix": "+",
+        "label": "پروژه تحویل داده شده"
+      },
+      {
+        "value": "۱۴",
+        "suffix": "",
+        "label": "انتخاب جشنواره‌ای"
+      },
+      {
+        "value": "۰۶",
+        "suffix": "",
+        "label": "کشورهای فیلم‌برداری شده"
+      }
+    ],
+    "socials": [
+      {
+        "id": "vimeo",
+        "label": "Vimeo",
+        "handle": "vimeo.com/faridsahraei",
+        "url": "https://vimeo.com"
+      },
+      {
+        "id": "youtube",
+        "label": "YouTube",
+        "handle": "@faridsahraei.film",
+        "url": "https://youtube.com"
+      },
+      {
+        "id": "instagram",
+        "label": "Instagram",
+        "handle": "@faridsahraei.dp",
+        "url": "https://instagram.com"
+      },
+      {
+        "id": "x",
+        "label": "X / Twitter",
+        "handle": "@faridsahraei_dp",
+        "url": "https://x.com"
+      }
+    ]
+  },
+  "bio": {
+    "_توضیح": "دو پاراگراف داستان شما در بخش «درباره من»",
+    "پاراگراف_۱": "من به عنوان دونده در شب‌های فیلم‌برداری شروع کردم، پرچم‌ها را زیر باران نگه می‌داشتم و نگاهی دزدانه به مانیتور می‌انداختم. آن اولین نگاه به ساخت تصویر — وقتی نور دقیقاً درست به چهره‌ای می‌تابد — هرگز محو نشد. از آن زمان، من در تبلیغات، موزیک ویدیوها و مستند کار کرده‌ام و به دنبال یک چیز هستم: قابی که اجتناب‌ناپذیر به نظر برسد.",
+    "پاراگراف_۲": "کار من جایی است که آمادگی با غریزه ملاقات می‌کند. من استوری‌بورد، تست نور و تمرینات ریگ را وسواسانه انجام می‌دهم — سپس نقشه را دور می‌اندازم به محض اینکه چیزی واقعی جلوی لنز اتفاق بیفتد. بهترین قاب‌ها به ندرت همان‌هایی هستند که استوری‌بورد کرده‌اید. آن‌ها قاب‌هایی هستند که به اندازه کافی بیدار بودید تا بگیریدشان."
+  },
+  "philosophy": {
+    "_توضیح": "فلسفه کاری شما",
+    "pull": "نور یک زبان است. بیشتر فیلم‌ها آن را مؤدبانه صحبت می‌کنند — من می‌خواهم فیلم‌هایم زمزمه کنند، فریاد بزنند و نگاه شما را نگه دارند.",
+    "body": "هر پروژه قبل از انتخاب هر دوربینی یک سوال می‌گیرد: این باید ساعت ۲ صبح وقتی کسی تنها تماشا می‌کند چه حسی داشته باشد؟ بقیه چیزها — لنز، گرید، ریتم — فقط پاسخ هستند."
+  },
+  "skills": {
+    "_توضیح": "مهارت‌ها — level عدد ۰ تا ۱۰۰ است (میزان نوار مهارت). icon یکی از این‌ها: aperture / edit / megaphone / neural / eye",
+    "list": [
+      {
+        "name": "فیلم‌برداری",
+        "note": "ARRI · RED · Sony Venice",
+        "level": 95,
+        "icon": "aperture"
+      },
+      {
+        "name": "تدوین ویدیو",
+        "note": "Premiere · DaV Resolve",
+        "level": 88,
+        "icon": "edit"
+      },
+      {
+        "name": "کارگردانی",
+        "note": "Narrative & commercial",
+        "level": 85,
+        "icon": "megaphone"
+      },
+      {
+        "name": "ابزارهای هوش مصنوعی",
+        "note": "Generative & assisted workflows",
+        "level": 80,
+        "icon": "neural"
+      },
+      {
+        "name": "روایت بصری",
+        "note": "Script to final grade",
+        "level": 92,
+        "icon": "eye"
+      }
+    ]
+  },
+  "projects": {
+    "_توضیح": "پروژه‌ها/فیلم‌ها — برای افزودن فیلم جدید، یک بلوک { } مثل بلوک‌های زیر کپی کنید و متن‌ها را عوض کنید. video = UID کلادفلر استریم یا لینک یوتیوب/ویمئو/mp4. thumb = تصویر شاخص. ratio = film (نسبت سینمایی ۲.۳۵) یا hd (عریض). wide = true یعنی کارت عریض‌تر در دسکتاپ.",
+    "list": [
+      {
+        "id": "static",
+        "index": "۰۱",
+        "title": "سکون",
+        "category": "Short Film",
+        "year": 2025,
+        "role": "کارگردان / مدیر فیلم‌برداری",
+        "duration": "۱۴:۵۲",
+        "format": "ARRI Alexa Mini LF · 2.39:1",
+        "description": "یک کارگر تعمیرات در یک ایستگاه فضایی از کار افتاده، صدایی را از میان نویز می‌شنود — و باید تصمیم بگیرد که پاسخ دهد یا نه. فیلم‌برداری شده تماماً با نورهای عملی و یک منبع نور متحرک.",
+        "credits": [
+          {
+            "role": "نویسنده و کارگردان",
+            "name": "A. Voss"
+          },
+          {
+            "role": "مدیر فیلم‌برداری",
+            "name": "A. Voss"
+          },
+          {
+            "role": "طراحی صحنه",
+            "name": "M. Okafor"
+          },
+          {
+            "role": "طراحی صدا",
+            "name": "L. Brandt"
+          }
+        ],
+        "thumb": "https://image.qwenlm.ai/generated-images/e0ea0091-d1fb-4e3e-8943-3ec289e948f9/_result.png",
+        "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+        "wide": true,
+        "ratio": "film"
+      },
+      {
+        "id": "neon-divide",
+        "index": "۰۲",
+        "title": "جدایی نئونی",
+        "category": "Music Video",
+        "year": 2024,
+        "role": "مدیر فیلم‌برداری",
+        "duration": "۰۴:۱۲",
+        "format": "Sony Venice · 2.00:1",
+        "description": "یک شب پیوسته، یک برداشت پیوسته. نامه‌ای عاشقانه به آسفالت خیس، بخار سدیم و آخرین قطار خانه — گرید شده به سمت آبی دقیق ساعت ۴ صبح.",
+        "credits": [
+          {
+            "role": "هنرمند",
+            "name": "KELPIE"
+          },
+          {
+            "role": "کارگردان",
+            "name": "R. Salgado"
+          },
+          {
+            "role": "مدیر فیلم‌برداری",
+            "name": "A. Voss"
+          }
+        ],
+        "thumb": "https://image.qwenlm.ai/generated-images/fc214ee8-ec57-442b-8ed7-56f62fa6f745/_result.png",
+        "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+        "ratio": "hd"
+      },
+      {
+        "id": "the-last-harvest",
+        "index": "۰۳",
+        "title": "آخرین برداشت",
+        "category": "Documentary",
+        "year": 2024,
+        "role": "کارگردان / تدوین‌گر",
+        "duration": "۲۲:۰۸",
+        "format": "فقط نور طبیعی · 1.85:1",
+        "description": "سه نسل در یک مزرعه که تا پایان دهه دوام نخواهد آورد. بدون نور، بدون تیم — دو سال بازدید فشرده شده در یک پاییز نهایی. انتخاب رسمی در چهار جشنواره مستند.",
+        "credits": [
+          {
+            "role": "کارگردان و تدوین‌گر",
+            "name": "A. Voss"
+          },
+          {
+            "role": "مدیر فیلم‌برداری",
+            "name": "A. Voss"
+          },
+          {
+            "role": "موسیقی اصلی",
+            "name": "T. Ilves"
+          }
+        ],
+        "thumb": "https://image.qwenlm.ai/generated-images/1c23fa50-2288-473b-bd5a-0eec89e15c96/_result.png",
+        "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+        "ratio": "film"
+      },
+      {
+        "id": "chrome-sunrise",
+        "index": "۰۴",
+        "title": "طلوع کرومی",
+        "category": "Commercial",
+        "year": 2023,
+        "role": "مدیر فیلم‌برداری",
+        "duration": "۰۱:۳۰",
+        "format": "RED V-Raptor · 2.39:1",
+        "description": "یک فیلم رونمایی برای برند خودروهای اسپرت میراثی — فیلم‌برداری شده در سپیده‌دم در یازده روز برای دقیقاً چهار دقیقه نور طلایی. سرعت، گرما و کروم، بر ضربان قلب تدوین شده است.",
+        "credits": [
+          {
+            "role": "مشتری",
+            "name": "Meridian Motors"
+          },
+          {
+            "role": "آژانس",
+            "name": "Field & Frame"
+          },
+          {
+            "role": "کارگردان",
+            "name": "J. Whitlock"
+          },
+          {
+            "role": "مدیر فیلم‌برداری",
+            "name": "A. Voss"
+          }
+        ],
+        "thumb": "https://image.qwenlm.ai/generated-images/6a1d5229-3569-40b9-9b72-b652360fbd69/_result.png",
+        "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+        "wide": true,
+        "ratio": "hd"
+      },
+      {
+        "id": "amber-rooms",
+        "index": "۰۵",
+        "title": "اتاق‌های کهربایی",
+        "category": "Brand Film",
+        "year": 2023,
+        "role": "کارگردان / مدیر فیلم‌برداری",
+        "duration": "۰۲:۴۵",
+        "format": "ARRI Alexa 35 · 1.66:1",
+        "description": "یک خانه خیاطی، یک سوئیت هتل، و نور تنگستن که از میان کرکره‌ها برش خورده است. مطالعه‌ای در صبر — جایی که لباس ثانویه نسبت به نحوه حرکت نور روی آن است.",
+        "credits": [
+          {
+            "role": "مشتری",
+            "name": "Harrow & Sons"
+          },
+          {
+            "role": "نویسنده و کارگردان",
+            "name": "A. Voss"
+          },
+          {
+            "role": "استایلیست",
+            "name": "C. Marchetti"
+          }
+        ],
+        "thumb": "https://image.qwenlm.ai/generated-images/815b24c2-c77e-4224-9dd7-c8c66a65ba8f/_result.png",
+        "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+        "ratio": "film"
+      },
+      {
+        "id": "northern-silence",
+        "index": "۰۶",
+        "title": "سکوت شمالی",
+        "category": "Documentary",
+        "year": 2022,
+        "role": "مدیر فیلم‌برداری / رنگ‌پرداز",
+        "duration": "۱۸:۲۰",
+        "format": "دستی + پهپاد · 2.39:1",
+        "description": "شش هفته بالای دایره قطبی دنبال کردن یک کاوشگر تنها. ما به سمت خاکستری دقیقی که آسمان قبل از برف نگه می‌دارد گرید کردیم — سپس اجازه دادیم سکوت تدوین را انجام دهد.",
+        "credits": [
+          {
+            "role": "کارگردان",
+            "name": "S. Halvorsen"
+          },
+          {
+            "role": "مدیر فیلم‌برداری",
+            "name": "A. Voss"
+          },
+          {
+            "role": "رنگ‌پردازی",
+            "name": "A. Voss"
+          }
+        ],
+        "thumb": "https://image.qwenlm.ai/generated-images/308e3b5f-10f6-4189-ae84-3c9ab7fe0183/_result.png",
+        "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+        "ratio": "hd"
+      }
+    ]
+  },
+  "portrait": "https://image.qwenlm.ai/generated-images/e0464990-2d56-47fa-a3b1-3827416873ed/_result.png"
+}

@@ -1,5 +1,5 @@
 import { useEffect, useState, type CSSProperties } from "react";
-import { site } from "../data/site";
+import { heroVideoSource, site } from "../data/site";
 import { usePrefersReducedMotion, useScramble } from "../hooks";
 import { IconArrowDown, IconPlay } from "./icons";
 
@@ -28,7 +28,7 @@ export default function Hero({ onPlayReel }: Props) {
         {showVideo ? (
           <video
             className="h-full w-full object-cover"
-            src={site.heroVideo}
+            src={heroVideoSource()}
             poster={site.heroPoster}
             autoPlay
             muted
