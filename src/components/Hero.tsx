@@ -94,7 +94,7 @@ export default function Hero({ onPlayReel }: Props) {
             {site.title}
           </p>
 
-          <h1 className="font-display leading-[0.82] text-bone-100">
+          <h1 className="font-display leading-[0.95] text-bone-100">
             <span className="block text-[clamp(4.2rem,14vw,11.5rem)]">
               {firstName || "\u00A0"}
             </span>
@@ -118,14 +118,14 @@ export default function Hero({ onPlayReel }: Props) {
           >
             <button
               onClick={onPlayReel}
-              className="group flex items-center gap-3 border border-bone-100/25 bg-coal-950/40 px-7 py-4 font-mono text-xs uppercase tracking-[0.25em] text-bone-100 backdrop-blur-sm transition-all duration-300 hover:border-tungsten-400 hover:bg-tungsten-400 hover:text-coal-950"
+              className="group flex items-center gap-3 border border-bone-100/25 bg-coal-950/40 px-7 py-4 text-[13px] font-medium tracking-wide text-bone-100 backdrop-blur-sm transition-all duration-300 hover:border-tungsten-400 hover:bg-tungsten-400 hover:text-coal-950"
             >
               <IconPlay className="h-3.5 w-3.5 transition-transform duration-300 group-hover:scale-125" />
               تماشای ریل
             </button>
             <a
               href="#work"
-              className="group flex items-center gap-3 font-mono text-xs uppercase tracking-[0.25em] text-bone-300 transition-colors hover:text-tungsten-400"
+              className="group flex items-center gap-3 text-[13px] tracking-wide text-bone-300 transition-colors hover:text-tungsten-400"
             >
               آثار منتخب
               <IconArrowDown className="h-4 w-4 transition-transform duration-300 group-hover:translate-y-1" />

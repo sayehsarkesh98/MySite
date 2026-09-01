@@ -18,7 +18,7 @@ export default function Footer() {
         <div className="flex flex-col justify-between gap-12 md:flex-row">
           <div>
             <p className="font-display text-3xl text-bone-100">{site.name}</p>
-            <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.25em] text-bone-600">
+            <p className="mt-2 text-[12px] tracking-wide text-bone-600">
               {site.title} — {site.location}
             </p>
           </div>

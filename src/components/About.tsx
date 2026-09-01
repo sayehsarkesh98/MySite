@@ -55,7 +55,7 @@ export default function About() {
                       {s.value}
                       <span className="text-2xl md:text-3xl">{s.suffix}</span>
                     </p>
-                    <p className="mt-2 font-mono text-[9px] uppercase tracking-[0.25em] text-bone-500">
+                    <p className="mt-2 text-[11px] tracking-wide text-bone-500">
                       {s.label}
                     </p>
                   </div>
@@ -74,7 +74,7 @@ export default function About() {
               02 — About
             </p>
             <h2
-              className="font-display text-6xl leading-[0.9] text-bone-100 md:text-8xl"
+              className="font-display text-6xl leading-[1.05] text-bone-100 md:text-8xl"
               data-reveal
               style={{ "--rd": "80ms" } as CSSProperties}
             >
@@ -99,7 +99,7 @@ export default function About() {
               className="mt-12 border-l-2 border-tungsten-400 pl-6 md:pl-8"
               data-reveal
             >
-              <p className="font-display text-3xl leading-tight text-bone-100 md:text-4xl">
+              <p className="font-display text-3xl leading-[1.35] text-bone-100 md:text-4xl">
                 “{philosophy.pull}”
               </p>
               <p className="mt-4 max-w-2xl text-sm leading-relaxed text-bone-500">
@@ -128,7 +128,7 @@ export default function About() {
                       <Icon className="h-5 w-5 transition-transform duration-500 group-hover:scale-110" />
                     </span>
                     <div>
-                      <h3 className="font-display text-xl leading-none text-bone-100 md:text-2xl">
+                      <h3 className="font-display text-xl leading-[1.25] text-bone-100 md:text-2xl">
                         {s.name}
                       </h3>
                       <p className="mt-2 font-mono text-[10px] leading-relaxed uppercase tracking-[0.2em] text-bone-500">

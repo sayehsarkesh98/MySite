@@ -39,7 +39,7 @@ export default function Contact() {
             03 — Contact
           </p>
           <h2
-            className="font-display leading-[0.85] text-bone-100 text-[clamp(3.5rem,9vw,8rem)]"
+            className="font-display leading-[1.05] text-bone-100 text-[clamp(3.5rem,9vw,8rem)]"
             data-reveal
             style={{ "--rd": "80ms" } as CSSProperties}
           >
@@ -66,7 +66,7 @@ export default function Contact() {
             <IconMail className="h-9 w-9 shrink-0 text-tungsten-400" />
             <div className="min-w-0">
               <p className="font-mono text-[9px] uppercase tracking-[0.3em] text-bone-600">
-                Email — placeholder · edit in src/data/site.ts
+                Email
               </p>
               <a
                 href={`mailto:${site.email}`}
@@ -108,7 +108,7 @@ export default function Contact() {
 
           {/* availability */}
           <p
-            className="mt-8 flex flex-wrap items-center gap-3 font-mono text-[11px] uppercase tracking-[0.25em] text-bone-500"
+            className="mt-8 flex flex-wrap items-center gap-3 text-[13px] tracking-wide text-bone-500"
             data-reveal
             style={{ "--rd": "320ms" } as CSSProperties}
           >

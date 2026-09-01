@@ -34,7 +34,7 @@ export default function Portfolio({ onOpen }: { onOpen: (p: Project) => void }) 
               <span className="inline-block h-px w-10 bg-tungsten-400" />
               01 — Portfolio
             </p>
-            <h2 className="font-display text-6xl leading-[0.9] text-bone-100 md:text-8xl">
+            <h2 className="font-display text-6xl leading-[1.05] text-bone-100 md:text-8xl">
               Selected <span className="text-tungsten-400">Works</span>
             </h2>
           </div>
@@ -149,7 +149,7 @@ function ProjectCard({
 
       <div className="mt-5 flex items-start justify-between gap-4 border-t border-bone-100/10 pt-4">
         <div>
-          <h3 className="font-display text-3xl leading-none text-bone-100 transition-colors duration-300 group-hover:text-tungsten-400 md:text-4xl">
+          <h3 className="font-display text-3xl leading-[1.15] text-bone-100 transition-colors duration-300 group-hover:text-tungsten-400 md:text-4xl">
             {p.title}
           </h3>
           <p className="mt-2 max-w-md text-sm leading-relaxed text-bone-500 line-clamp-2">
@@ -242,7 +242,7 @@ export function ProjectModal({
         {/* details */}
         <div className="p-6 md:p-10">
           <div className="flex flex-wrap items-baseline justify-between gap-4">
-            <h3 className="font-display text-5xl leading-none text-bone-100 md:text-7xl">
+            <h3 className="font-display text-5xl leading-[1.1] text-bone-100 md:text-7xl">
               {project.title}
             </h3>
             <span className="font-mono text-sm tracking-[0.3em] text-tungsten-400">

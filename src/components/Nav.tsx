@@ -51,7 +51,7 @@ export default function Nav() {
             <span className="grid h-9 w-9 place-items-center border border-tungsten-400/60 font-display text-lg leading-none text-tungsten-400 transition-colors duration-300 group-hover:bg-tungsten-400 group-hover:text-coal-950">
               {site.monogram}
             </span>
-            <span className="hidden font-display text-xl tracking-wide text-bone-100 sm:block">
+            <span className="hidden font-display text-xl text-bone-100 sm:block">
               {site.name}
             </span>
           </a>
@@ -61,7 +61,7 @@ export default function Nav() {
               <li key={l.href}>
                 <a
                   href={l.href}
-                  className="group relative font-mono text-[11px] uppercase tracking-[0.3em] text-bone-300 transition-colors hover:text-bone-100"
+                  className="group relative text-[13px] tracking-wide text-bone-300 transition-colors hover:text-bone-100"
                 >
                   <span className="ml-2 ltr-tech text-tungsten-500">0{i + 1}</span>
                   {l.label}

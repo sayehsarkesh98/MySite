@@ -1,4 +1,23 @@
 @import "tailwindcss";
+/* ——— Self-hosted fonts (fontsource) ———
+   Persian display:  Estedad (700/800/900, arabic subset)
+   Persian body:     Vazirmatn (300–700, arabic subset)
+   Latin display:    Bebas Neue (400, latin)  — condensed poster caps
+   Latin mono:       JetBrains Mono (400/700, latin) — slate/meta readouts */
+@import "@fontsource/estedad/arabic-400.css";
+@import "@fontsource/estedad/arabic-500.css";
+@import "@fontsource/estedad/arabic-600.css";
+@import "@fontsource/estedad/arabic-700.css";
+@import "@fontsource/estedad/arabic-800.css";
+@import "@fontsource/estedad/arabic-900.css";
+@import "@fontsource/vazirmatn/arabic-300.css";
+@import "@fontsource/vazirmatn/arabic-400.css";
+@import "@fontsource/vazirmatn/arabic-500.css";
+@import "@fontsource/vazirmatn/arabic-600.css";
+@import "@fontsource/vazirmatn/arabic-700.css";
+@import "@fontsource/bebas-neue/400.css";
+@import "@fontsource/jetbrains-mono/400.css";
+@import "@fontsource/jetbrains-mono/700.css";
 
 @theme {
   /* ——— Palette: warm charcoal base, tungsten key light, teal grade ——— */
@@ -24,7 +43,12 @@
   --color-tealgrade-500: #5c8a82;
   --color-tealgrade-700: #38564f;
 
-  --font-display: "B Titr", "Bebas Neue", "Arial Narrow", sans-serif;
+  /* Display: Persian → Estedad Black/Bold؛ Latin → Bebas Neue (poster caps) */
+  --font-display: "Estedad", "Bebas Neue", "Vazirmatn", "Arial Narrow", sans-serif;
+  /* Body: Vazirmatn covers Persian + Latin harmoniously */
+  --font-body: "Vazirmatn", "Estedad", "Helvetica Neue", Helvetica, sans-serif;
+  /* Mono: JetBrains Mono for latin slates; Persian chars fall back to Vazirmatn */
+  --font-mono: "JetBrains Mono", "Vazirmatn", "Courier New", monospace;
   --font-body: "Vazirmatn", "Archivo", "Helvetica Neue", Helvetica, sans-serif;
   --font-mono: "JetBrains Mono", "Space Mono", "Courier New", monospace;
 }
